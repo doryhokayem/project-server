@@ -12,10 +12,10 @@
 |
 */
 
-Route::get('/redis', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'ProjectController@index');
+Route::get('/redis', 'ProjectController@index');
 
 
